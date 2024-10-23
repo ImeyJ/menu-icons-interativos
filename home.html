@@ -46,7 +46,7 @@
       <a href="/api"><ion-icon name="home-outline"></ion-icon></a>
     </li>
     <li style="--i: 1; --clr: #fee800">
-      <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+      <a href="https://panel.imey7.web.id"><ion-icon name="settings-outline"></ion-icon></a>
     </li>
     <li style="--i: 2; --clr: #04fc43">
       <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
@@ -58,10 +58,10 @@
       <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
     </li>
     <li style="--i: 5; --clr: #fea600">
-      <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+      <a href="/api/game"><ion-icon name="game-controller-outline"></ion-icon></a>
     </li>
     <li style="--i: 6; --clr: #a529ff">
-      <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+      <a href="https://imey7.web.id"><ion-icon name="person-outline"></ion-icon></a>
     </li>
     <li style="--i: 7; --clr: #01bdab">
       <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
@@ -83,8 +83,10 @@
     <source src="https://i.top4top.io/m_3217qxfvn0.mp3" type="audio/mpeg">
     <source src="https://top4top.io/downloadf-32170aojm1-ogg.html" type="audio/ogg">
   </audio>
-
-<audio autoplay="true" src="https://j.top4top.io/m_1772xeikf9.mp3"></audio>
+   
+  <audio id="music" autoplay> 
+   <source src="https://j.top4top.io/m_1772xeikf9.mp3" type="audio/mp3"> 
+  </audio> 
 
   <!-- JavaScript code to handle menu toggle and hover sounds -->
   <script>
@@ -92,6 +94,8 @@
       var toggleSound = $("#toggleSound")[0];
       var openSound = $("#openSound")[0];
       var hoverSound = $("#hoverSound")[0];
+      var music = document.getElementById("music"); 
+      music.play();
 
       let menuToggle = document.querySelector(".menuToggle");
       let menu = document.querySelector(".menu");
